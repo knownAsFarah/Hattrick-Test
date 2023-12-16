@@ -1,0 +1,8 @@
+
+<div class="sportCard w-64 h-64  rounded-3xl overflow-hidden shadow-lg m-5 float-left" *ngFor="let sport of sports">
+  <img class="w-full h-40" [src]="sport.image" alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+      <div class="font-bold text-2xl mb-2 " [class]="sport.title">{{ sport.title }}</div>
+      <p class="text-gray-700 text-base">{{ sport.text }}</p>
+    </div>
+  </div>

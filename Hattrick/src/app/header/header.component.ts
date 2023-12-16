@@ -1,12 +1,11 @@
-import { Component , HostListener } from '@angular/core';
+import { Component , HostListener} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class AppComponent {
-  title = 'Hattrick';
+export class HeaderComponent {
   isLargeScreen = true;
 
   @HostListener('window:resize', ['$event'])
@@ -21,4 +20,5 @@ export class AppComponent {
   private checkScreenSize(): void {
     this.isLargeScreen = window.innerWidth > 768; // Adjust the threshold as needed
   }
+
 }
