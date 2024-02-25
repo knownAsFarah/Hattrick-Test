@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { environment } from '../environments/environment';
+import { RulesComponent } from './rules/rules.component';
 // import { AngularFireModule } from '@angular/fire';
 
 const appRoutes : Routes =
@@ -37,6 +38,7 @@ const appRoutes : Routes =
     HomeComponent,
     LoginComponent,
     SignupComponent,
+    RulesComponent,
     
   ],
   imports: [

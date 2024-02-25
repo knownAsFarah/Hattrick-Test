@@ -1,13 +1,18 @@
-        .horizontal-line {
-            width: 100%; 
-            text-align: center; 
-            border-bottom: 1px solid #6B6D84; 
-            line-height: 0.1em;
-            font-size: 14px;
-            } 
-            .text-in-line {
-                background:#fff; 
-                color: #6B6D84;
-                padding: 0px 10px ;
-            
-            }
+.background-grass{
+    background-image: url("../../assets/images/green_grass.jpg");
+    background-repeat: repeat;
+    background-position:center;
+}
+.horizontal-line {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #6B6D84; 
+    line-height: 0.1em;
+    font-size: 14px;
+    } 
+.text-in-line {
+    background:#fff; 
+    color: #6B6D84;
+    padding: 0px 10px ;
+
+}
