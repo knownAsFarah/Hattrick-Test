@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { SPORTS } from 'src/sports';
 
 @Component({
@@ -9,5 +10,11 @@ import { SPORTS } from 'src/sports';
 export class SportComponent {
   sports = SPORTS;
   imageUrl = '../assets/images/football.jpg';
-
+  
+  constructor(private router : Router){
+  }
+  viewFields(type : String){
+    this.router.navigateByUrl('/fields')
+    console.log(type)
+  }
 }

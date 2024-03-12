@@ -13,16 +13,21 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { environment } from '../environments/environment';
+import { RulesComponent } from './rules/rules.component';
+import { FieldsComponent } from './fields/fields.component';
+import { FieldCardComponent } from './field-card/field-card.component';
 // import { AngularFireModule } from '@angular/fire';
 
 const appRoutes : Routes =
 [
   {path: '',component: HomeComponent},
   {path: 'home',component: HomeComponent},
-  {path: 'publicGames',component: PublicGamesComponent},
+  {path: 'fields',component: FieldsComponent},
   {path: 'schedule',component: ScheduleComponent},
   {path: 'help',component: UserHelpComponent},
   {path: 'login',component: LoginComponent},
+  {path: 'signup',component: SignupComponent},
+
 
 ];
 @NgModule({
@@ -37,6 +42,9 @@ const appRoutes : Routes =
     HomeComponent,
     LoginComponent,
     SignupComponent,
+    RulesComponent,
+    FieldsComponent,
+    FieldCardComponent,
     
   ],
   imports: [

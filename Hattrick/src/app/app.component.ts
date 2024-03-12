@@ -1,4 +1,5 @@
 import { Component , HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,11 @@ import { Component , HostListener } from '@angular/core';
 export class AppComponent {
   title = 'Hattrick';
   isLargeScreen = true;
+  constructor(private router : Router){
 
+  }
   @HostListener('window:resize', ['$event'])
+  
   onResize(event: Event): void {
     this.checkScreenSize();
   }
@@ -20,5 +24,9 @@ export class AppComponent {
 
   private checkScreenSize(): void {
     this.isLargeScreen = window.innerWidth > 768; // Adjust the threshold as needed
+  }
+  navigateTo(path:string){
+    console.log(path)
+    this.router.navigateByUrl('/'+path)
   }
 }
