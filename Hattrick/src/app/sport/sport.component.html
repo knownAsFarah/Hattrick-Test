@@ -1,5 +1,6 @@
 
-<div class="sportCard w-64 h-64  rounded-3xl overflow-hidden shadow-lg m-5" *ngFor="let sport of sports">
+<div class="sportCard w-64 h-64  rounded-3xl overflow-hidden shadow-lg m-5" *ngFor="let sport of sports" >
+<div class="clickable" [routerLink]="['/fields', sport.type]" (click)="viewFields(sport.type)">
   <img class="w-full h-40" [src]="sport.image" alt="Sport image">
   <div class="px-6 py-4 flex justify-between">
     <div>
@@ -8,5 +9,5 @@
     </div>
       <div class=" flex flex-col justify-center" [class]="sport.type"><i class="fa-solid fa-bars text-3xl"></i><span class="text-xs">Rules</span></div>
   </div>
-  
+</div>
   </div>

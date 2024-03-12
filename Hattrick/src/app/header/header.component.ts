@@ -1,4 +1,5 @@
-import { Component , HostListener} from '@angular/core';
+import { Component , HostListener, Input} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,11 @@ import { Component , HostListener} from '@angular/core';
 })
 export class HeaderComponent {
   isLargeScreen = true;
+  @Input() navigateTo: any
+  constructor(private router: Router){}
 
   @HostListener('window:resize', ['$event'])
+  
   onResize(event: Event): void {
     this.checkScreenSize();
   }
@@ -20,5 +24,10 @@ export class HeaderComponent {
   private checkScreenSize(): void {
     this.isLargeScreen = window.innerWidth > 768; // Adjust the threshold as needed
   }
+  navigate(path:string){
+    this.router.navigateByUrl('/'+path)
+  }
+  
+
 
 }
