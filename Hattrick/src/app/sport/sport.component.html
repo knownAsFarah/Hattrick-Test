@@ -1,8 +1,13 @@
 
-<div class="sportCard w-64 h-64  rounded-3xl overflow-hidden shadow-lg m-5 float-left" *ngFor="let sport of sports">
-  <img class="w-full h-40" [src]="sport.image" alt="Sunset in the mountains">
-  <div class="px-6 py-4">
-      <div class="font-bold text-2xl mb-2 " [class]="sport.title">{{ sport.title }}</div>
-      <p class="text-gray-700 text-base">{{ sport.text }}</p>
+<div class="sportCard w-64 h-64  rounded-3xl overflow-hidden shadow-lg m-5" *ngFor="let sport of sports" >
+<div class="clickable" [routerLink]="['/fields', sport.type]" (click)="viewFields(sport.type)">
+  <img class="w-full h-40" [src]="sport.image" alt="Sport image">
+  <div class="px-6 py-4 flex justify-between">
+    <div>
+      <div class="font-bold text-2xl mb-2 " [class]="sport.type">{{ sport.type }}</div>
+      <div class="text-gray-700 text-md text-base">{{ sport.text }}</div>
     </div>
+      <div class=" flex flex-col justify-center" [class]="sport.type"><i class="fa-solid fa-bars text-3xl"></i><span class="text-xs">Rules</span></div>
+  </div>
+</div>
   </div>

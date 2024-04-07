@@ -1,24 +1,4 @@
-/* .sportCard{
-    position: relative;
-    margin: 20px;
-    padding: 10px;
-    background-color: blueviolet;
-} */
-.Football{
-    color: #009900;
-}
-.Basketball{
-    color: #FF5207;
-}
-.Tennis{
-    color: #AAEE00;
-}
-.Badmenton{
-    color: #ae2012;
-}
-.Handball{
-    color: #023e7d;
-}
-.Volyball{
-    color: #4361ee;
+.sportCard{
+    position: static;
+    
 }
