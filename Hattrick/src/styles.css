@@ -7,6 +7,9 @@ body{
   position: static;
   margin: 0px;
   padding: 0px;
+  overflow: auto;
+  scrollbar-width: none;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .hattrick-green-color{
     background-color: #0b8400;

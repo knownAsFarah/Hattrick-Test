@@ -16,6 +16,8 @@ import { environment } from '../environments/environment';
 import { RulesComponent } from './rules/rules.component';
 import { FieldsComponent } from './fields/fields.component';
 import { FieldCardComponent } from './field-card/field-card.component';
+import { FieldInfoComponent } from './field-info/field-info.component';
+import { FooterComponent } from './footer/footer.component';
 // import { AngularFireModule } from '@angular/fire';
 
 const appRoutes : Routes =
@@ -27,6 +29,7 @@ const appRoutes : Routes =
   {path: 'help',component: UserHelpComponent},
   {path: 'login',component: LoginComponent},
   {path: 'signup',component: SignupComponent},
+  {path: 'info',component: FieldInfoComponent},
 
 
 ];
@@ -45,6 +48,7 @@ const appRoutes : Routes =
     RulesComponent,
     FieldsComponent,
     FieldCardComponent,
+    FooterComponent,
     
   ],
   imports: [

@@ -22,7 +22,7 @@ export class HeaderComponent {
   }
 
   private checkScreenSize(): void {
-    this.isLargeScreen = window.innerWidth > 768; // Adjust the threshold as needed
+    this.isLargeScreen = window.innerWidth > 768; 
   }
   navigate(path:string){
     this.router.navigateByUrl('/'+path)
